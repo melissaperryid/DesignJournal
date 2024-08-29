@@ -37,10 +37,19 @@ h1 {
     opacity: 90%;
 }
 
+h2 {
+    font-size: larger;
+}
+
 .container {
-    margin: 0px 200px;
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: center;
     padding: 1rem;
     background-color: white;
+    width: auto;
+    min-width: 70%;
+    max-width: 90vh;
     min-height: 100vh;
 }
 
