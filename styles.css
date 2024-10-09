@@ -1,5 +1,6 @@
 html {
     font-size: 22px;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -34,15 +35,33 @@ hr {
 }
 
 h1 {
-    color: #0c213a;
+    color: #0f325c;
     opacity: 90%;
     font-size: xx-large;
     min-width: 15rem;
     text-wrap: balance;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 h2 {
     font-size: larger;
+}
+
+a:hover, a:focus {
+    filter: brightness(150%);
 }
 
 .container {
